@@ -19,7 +19,7 @@ class MyWork extends StatelessWidget {
               label(
                   label: "<My Works>",
                   color: Colors.black,
-                  fontSize: 0.015 * context.width)
+                  fontSize: 25)
             ],
           ),
         ),
@@ -37,7 +37,7 @@ class MyWork extends StatelessWidget {
                   children: [
                       
                         workCard(
-                      width: 400,
+                      width: 350,
                         title: "Vlearn",
                         logo: "assets/images/v.png",
                         desc:
@@ -47,57 +47,13 @@ class MyWork extends StatelessWidget {
                         storeLink:
                             "https://bit.ly/35f4v5E"),
                 
+              
                     workCard(
-                      width: 400,
+                      width: 350,
                         title: "Crisps Inc.",
                         logo: "assets/images/logo.png",
-                        desc:
-                            "vlearn is an initiative which aims to be providing learning services \non the app",
-                             workedWith: "Flutter, Firebase, REST API, PHP, NextJS",
-                        date: "2022-Present",
-                        storeLink:
-                            "https://bit.ly/3Me8ZtA"),
-                     
-                       workCard(
-                      width: 400,
-                        title: "Vlearn",
-                        logo: "assets/images/v.png",
                         desc:
                             "Crisp is an initiative to provide short news for the mobile generation on the app.",
-                        workedWith: "Flutter, Firebase, REST API, PHP, NextJS",
-                        date: "2022-Present",
-                        storeLink:
-                            "https://bit.ly/35f4v5E"),
-                
-                    workCard(
-                      width: 400,
-                        title: "Crisps Inc.",
-                        logo: "assets/images/logo.png",
-                        desc:
-                            "vlearn is an initiative which aims to be providing learning services\n on the app",
-                             workedWith: "Flutter, Firebase, REST API, PHP, NextJS",
-                        date: "2022-Present",
-                        storeLink:
-                            "https://bit.ly/3Me8ZtA"),
-                     
-                      
-                        workCard(
-                      width: 400,
-                        title: "Vlearn",
-                        logo: "assets/images/v.png",
-                        desc:
-                            "Crisp is an initiative to provide short news for the mobile generation on the app.",
-                        workedWith: "Flutter, Firebase, REST API, PHP, NextJS",
-                        date: "2022-Present",
-                        storeLink:
-                            "https://bit.ly/35f4v5E"),
-                
-                    workCard(
-                      width: 400,
-                        title: "Crisps Inc.",
-                        logo: "assets/images/logo.png",
-                        desc:
-                            "vlearn is an initiative which aims to be providing learning services\n on the app",
                              workedWith: "Flutter, Firebase, REST API, PHP, NextJS",
                         date: "2022-Present",
                         storeLink:

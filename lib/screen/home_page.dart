@@ -18,7 +18,7 @@ class HomePage extends StatelessWidget {
         body: Stack(
           children: [
             Container(
-              margin: EdgeInsets.only(top: 0.1 * context.height),
+              margin: context.width < 625 ? null : EdgeInsets.only(top: 0.1 * context.height),
               child: SingleChildScrollView(
                 controller: scrollController,
                 child: Column(children: [
@@ -48,7 +48,7 @@ class HomePage extends StatelessWidget {
                 ]),
               ),
             ),
-            Header(scrollController: scrollController),
+            context.width > 625 ? Header(scrollController: scrollController): Container(),
           ],
         ));
   }

@@ -17,6 +17,7 @@ class Header extends StatefulWidget {
 class _HeaderState extends State<Header> {
   
   int pageIndex = 0;
+  int breakPoint = 615;
 
   @override
   Widget build(BuildContext context) {
@@ -32,36 +33,41 @@ class _HeaderState extends State<Header> {
             ),
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 0.015 * context.height),
-              child: Row(
-                children: [
-                  InkWell(
-                    onTap: () {
-                      setState(() {
-                        pageIndex = 0;  
-                      });
-                      widget.scrollController.scrollToIndex(0, preferPosition: AutoScrollPosition.begin);                      
-                    },
-                    child: menuText(label: "About Me",selected: (pageIndex == 0))),
-                  InkWell(
-                    onTap: () {
-                      setState(() {
-                        pageIndex = 1;  
-                      });
-
-                      widget.scrollController.scrollToIndex(1, preferPosition: AutoScrollPosition.end);
-                    },
-                    child: menuText(label: "My Works",selected: (pageIndex == 1))),
-                  InkWell(
-                    onTap: () {
-                      setState(() {
-                        pageIndex = 2;  
-                      });
-
-                      widget.scrollController.scrollToIndex(3, preferPosition: AutoScrollPosition.end);
-                    },
-                    child: menuText(label: "Contact",selected: (pageIndex == 2))),
-                  buttonPortfolio(label: "Download My CV"),
-                ],
+              child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Container(
+                  child: Row(
+                    children: [
+                      InkWell(
+                        onTap: () {
+                          setState(() {
+                            pageIndex = 0;  
+                          });
+                          widget.scrollController.scrollToIndex(0, preferPosition: AutoScrollPosition.begin);                      
+                        },
+                        child: menuText(label: "About Me",selected: (pageIndex == 0))),
+                      InkWell(
+                        onTap: () {
+                          setState(() {
+                            pageIndex = 1;  
+                          });
+              
+                          widget.scrollController.scrollToIndex(1, preferPosition: AutoScrollPosition.end);
+                        },
+                        child: menuText(label: "My Works",selected: (pageIndex == 1))),
+                      InkWell(
+                        onTap: () {
+                          setState(() {
+                            pageIndex = 2;  
+                          });
+              
+                          widget.scrollController.scrollToIndex(3, preferPosition: AutoScrollPosition.end);
+                        },
+                        child: menuText(label: "Social Links",selected: (pageIndex == 2))),
+                      buttonPortfolio(label: "Download My CV"),
+                    ],
+                  ),
+                ),
               ),
             )
           ]),

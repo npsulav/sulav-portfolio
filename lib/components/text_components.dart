@@ -69,6 +69,7 @@ Widget workCard(
     elevation: 10,
     child: Container(
         margin: const EdgeInsets.all(10),
+        padding: const EdgeInsets.all(10),
         width: width,
         decoration: const BoxDecoration(
             color: Colors.white,

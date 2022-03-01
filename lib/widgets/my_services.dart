@@ -22,7 +22,7 @@ class MyServices extends StatelessWidget {
                 label(
                     label: "</My Works>",
                     color: Colors.black,
-                    fontSize: 0.015 * context.width)
+                    fontSize: 25)
               ],
             ),
           ),
