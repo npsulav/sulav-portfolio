@@ -33,10 +33,11 @@ class MyWork extends StatelessWidget {
               Container(
                 margin: EdgeInsets.symmetric(vertical: 0.015 * context.height),
                 child: Wrap(
+                  
                   children: [
                       
                         workCard(
-                      width: context.width * 0.2,
+                      width: 400,
                         title: "Vlearn",
                         logo: "assets/images/v.png",
                         desc:
@@ -47,18 +48,18 @@ class MyWork extends StatelessWidget {
                             "https://bit.ly/35f4v5E"),
                 
                     workCard(
-                      width: context.width * 0.2,
+                      width: 400,
                         title: "Crisps Inc.",
                         logo: "assets/images/logo.png",
                         desc:
-                            "vlearn is an initiative which aims to be providing learning services on the app",
+                            "vlearn is an initiative which aims to be providing learning services \non the app",
                              workedWith: "Flutter, Firebase, REST API, PHP, NextJS",
                         date: "2022-Present",
                         storeLink:
                             "https://bit.ly/3Me8ZtA"),
                      
                        workCard(
-                      width: context.width * 0.2,
+                      width: 400,
                         title: "Vlearn",
                         logo: "assets/images/v.png",
                         desc:
@@ -69,11 +70,11 @@ class MyWork extends StatelessWidget {
                             "https://bit.ly/35f4v5E"),
                 
                     workCard(
-                      width: context.width * 0.2,
+                      width: 400,
                         title: "Crisps Inc.",
                         logo: "assets/images/logo.png",
                         desc:
-                            "vlearn is an initiative which aims to be providing learning services on the app",
+                            "vlearn is an initiative which aims to be providing learning services\n on the app",
                              workedWith: "Flutter, Firebase, REST API, PHP, NextJS",
                         date: "2022-Present",
                         storeLink:
@@ -81,7 +82,7 @@ class MyWork extends StatelessWidget {
                      
                       
                         workCard(
-                      width: context.width * 0.2,
+                      width: 400,
                         title: "Vlearn",
                         logo: "assets/images/v.png",
                         desc:
@@ -92,11 +93,11 @@ class MyWork extends StatelessWidget {
                             "https://bit.ly/35f4v5E"),
                 
                     workCard(
-                      width: context.width * 0.2,
+                      width: 400,
                         title: "Crisps Inc.",
                         logo: "assets/images/logo.png",
                         desc:
-                            "vlearn is an initiative which aims to be providing learning services on the app",
+                            "vlearn is an initiative which aims to be providing learning services\n on the app",
                              workedWith: "Flutter, Firebase, REST API, PHP, NextJS",
                         date: "2022-Present",
                         storeLink:
